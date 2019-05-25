@@ -1,0 +1,222 @@
+/*----------------- inicio estilos globales ------------*/
+html { 
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e4e4e4;
+}
+
+header{
+    padding: 20px 0;
+    background-color: #e4e4e4;
+}
+
+div.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+div.contenedor.principal{
+    background-color: #f2f2f2;
+    -webkit-box-shadow: 0 0 30px 0 rgba(12,12,12,12);
+    box-shadow: 0 0 30px 0 rgba(12,12,12,12);
+}
+
+div.contenido-header{
+    position: relative;
+}
+
+div.contenedor-video{
+    max-width: 100%;
+    overflow: hidden;
+    text-align:center;
+}
+
+div.logo{
+    position:absolute;
+    top:0%;
+    left: 0%;
+    height:100%;
+    width: 100%
+}
+/*----------------- Fin estilos globales ------------*/
+
+/*----------------- Inicio navegacion ------------*/
+div.navegacion{
+    background-color: #1f1d1d;
+}
+
+nav{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav > ul > li{
+    float: left;
+}
+
+nav ul li a{
+    display: inline-block;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #df5616;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(223, 86, 22, 0.7);
+    display: none;
+}
+
+nav ul li:hover > ul{
+    display: block;
+}
+
+nav ul li:hover{
+    background-color: rgb(223, 86, 22, 1);
+}
+
+/*----------------- Fin navegacion ------------*/
+
+/*----------------- Inicio Principal ------------*/
+main{
+    width: 70%;
+    float: left;
+    padding-right: 70px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+
+/*--------------- Inicio Articles ----------------*/
+article{
+    margin-top: 30px;
+    padding-left: 40px;
+}
+h2{
+    color: rgb(223, 86, 22, 1);
+    margin-bottom: 20px;
+}
+
+article img{
+    float: left;
+    width: 300px;
+    margin-right: 30px; 
+}
+
+article p{
+    line-height: 2;
+    text-align: justify;
+}
+
+.boton{
+    background-color: rgb(223, 86, 22, 1);
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*---------------- Fin Articles  ----------------*/
+
+/*-------------- Inicio sidebar --------------*/
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    padding: 10px 0px 10px 10px;
+}
+
+aside ul li:hover{
+    background-color: rgb(223, 86, 22, 1);
+    cursor: pointer;
+}
+
+aside ul li a{
+    color: rgb(223, 86, 22, 1);
+    text-decoration: none;
+}
+
+aside ul li:hover a{
+    color: white;
+}
+/*-------------- Fin sidebar --------------*/
+
+/*----------------- Fin Principal ------------*/
+
+/*-------------- Inicio Footer --------------*/
+footer{
+    background-color: #1f1d1d;
+    /*margin-top: 30px;*/ 
+    padding-top: 40px; 
+}
+
+footer h2{
+    color: #ffffff;
+}
+
+
+footer div.nosotros{
+    float: left;
+    width: 30%;
+    color: #ffffff;
+}
+
+footer div.menu{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+footer nav {
+    width: auto;
+}
+
+footer nav ul li a{
+    width: auto;
+}
+
+p.copyright{
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+/*-------------- Fin Footer --------------*/
