@@ -26,14 +26,13 @@ body{
 }
 
 header{
-    padding: 20px 0;
     background-color: #e4e4e4;
 }
 
 div.contenedor{
     width: 1200px;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding: 20px;
 }
 
 div.contenedor.principal{
@@ -42,22 +41,8 @@ div.contenedor.principal{
     box-shadow: 0 0 30px 0 rgba(12,12,12,12);
 }
 
-div.contenido-header{
-    position: relative;
-}
-
-div.contenedor-video{
-    max-width: 100%;
-    overflow: hidden;
-    text-align:center;
-}
-
-div.logo{
-    position:absolute;
-    top:0%;
-    left: 0%;
-    height:100%;
-    width: 100%
+div.logo img{
+    width: 150px;
 }
 /*----------------- Fin estilos globales ------------*/
 
@@ -124,14 +109,32 @@ aside{
 }
 
 /*--------------- Inicio Articles ----------------*/
+div.contenedor-video{
+    padding-left: 40px;
+}
+
 article{
     margin-top: 30px;
     padding-left: 40px;
 }
-h2{
+
+article ul li span{
+    color: black;
+}
+
+
+article ul li{
+    color: rgb(223, 86, 22, 1);
+}
+
+article ul ul>li{
+    margin-left: 20px;
+}
+h2, h3{
     color: rgb(223, 86, 22, 1);
     margin-bottom: 20px;
 }
+
 
 article img{
     float: left;
@@ -186,11 +189,11 @@ aside ul li:hover a{
 footer{
     background-color: #1f1d1d;
     /*margin-top: 30px;*/ 
-    padding-top: 40px; 
+    padding-top: 20px; 
 }
 
 footer h2{
-    color: black;
+    color: rgb(223, 86, 22, 1);
 }
 
 
@@ -202,7 +205,7 @@ footer div.nosotros{
 
 footer div.menu{
     float: right;
-    width: 40%;
+    width: 50%;
     text-align: right;
 }
 
@@ -215,7 +218,7 @@ footer nav ul li a{
 }
 
 p.copyright{
-    padding: 20px 0;
+    padding-bottom: 15px ;
     text-align: center;
     color: #ffffff;
 }
