@@ -75,6 +75,8 @@ nav ul li a{
 
 nav ul li a:hover {
     background-color: #df5616;
+    color: white;
+    text-decoration: none;
 }
 
 nav ul ul{
@@ -148,13 +150,21 @@ article p{
 
 .boton{
     background-color: rgb(223, 86, 22, 1);
-    padding: 10px 30px;
+    padding: 8px 20px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 2px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer; 
+}
+
+
+
+div.boton a{
+    color: white;
 }
 /*---------------- Fin Articles  ----------------*/
 
