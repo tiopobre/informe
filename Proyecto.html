@@ -25,20 +25,8 @@
             <ul class="clearfix">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Proyecto.html">Proyecto</a></li>
-                <li><a href="Emergencia.html">Emergencia</a>
-                    <ul>
-                        <li><a href="#">¿Que es?</a></li>
-                        <li><a href="#">otro</a></li>
-                        <li><a href="#">otro</a></li>
-                    </ul>
-                </li>
-                <li><a href="colombia-general.html">Colombia</a>
-                    <ul>
-                        <li><a href="colombia-general.html">General</a></li>
-                        <li><a href="#">Estadisticas</a></li>
-                        <li><a href="#">Emergencia</a></li>
-                    </ul>
-                </li>
+                <li><a href="Emergencia.html">Emergencia</a></li>
+                <li><a href="colombia-general.html">Colombia</a>                </li>
                 <li><a href="#">Aplicaciones</a></li>
             </ul>
         </nav>
@@ -61,6 +49,13 @@
             </article>
 
             <article>
+                    <h2>Objetivo</h2>
+                    <p> Plantear posibles proyectos basados en sistemas emergentes que se puedan llevar al 
+                        contexto nacional y que cubran o satisfaga  las necesidades de una 
+                        comunidad
+                    </p>
+                </article>
+           <article>
                 <h2>Requerimientos</h2>
                 <p>Un software para computadores que permita generar registros de partículas, sus características y
                     variables con la visualización en 3 o más dimensiones de los datos relacionados a las acciones
@@ -68,7 +63,8 @@
                     conocimiento sobre todas sus relaciones y las tendencias resultantes para la masa de partículas.</p>
 
             </article>
-
+            <div style="width: 640px; height: 480px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/fe7fcc99-058c-45ad-b9c0-d42b8b001d55" id="lXvn6uLXr2k0"></iframe>
+            </div>
             <article>
                 <h2>Requerimientos particulas</h2>
                 <p>
@@ -90,16 +86,120 @@
                         </p>
             </article>
 
+            <article class="col-6"> 
+                <h2>Fase 1</h2> <h3>OpenGL</h3>
+                <img src="img/Opengl1.jpg" alt="Imagen OpenGL">
+                
+                <ul class="clearfix">
+                    <li> <span> Primer acercamiento a movimiento aleatorio de partículas. </span> </li>
+                    <ul>
+                        <li> <span> Interfaz gráfica limitada, movimiento sesgado a un aleatorio parcializado. </span>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="fase_content row">
+                    <div class="avance col-8">
+                            <h3>13-03-19</h3>
+                            <h4>Descripción:</h4>
+                            <p>
+                                Evidencia de mejoramiento en el reconocimiento del obstáculo como objeto en el mundo mediante la aplicación de la consecuencia proveniente del tipo de obstáculo generado.
+                                Cambios en movimiento para seguir buscando la fluidez necesaria.
+                            </p>
+                            <h4>Implementación:</h4>
+                            <p>
+                                Intersección entre partículas del mundo y obstáculo tipo 1 (reducción de velocidad de partícula).
+                                Se definió tanto la partícula como los obstáculos de tipo path, para evaluar la intersección entre ambos y poder modificar el comportamiento de la partícula según la situación, existieron limitaciones en la implementación puesto que la definición de los objetos sólo contemplaba su contorno por lo cual en la parte central de los mismos no se podía captar la intersección deseada.
+                                      
+                            </p>
+                            <h4>Observaciones:</h4>
+                            <p>
+                                Implementar, cuestionar, complejizar y demostrar.
+                            </p>
+                    </div>                        
+                </div>
+               
+            </article>
+
+            <article class="col-6">
+                <h2>Fase 2</h2> <h3>JavaScript y paper.js</h3>
+                <img src="img/JavaScript1.jpg" alt="Imagen JavaScript">
+                
+                <ul class="clearfix">
+                    <li> <span> Movimiento aleatorio de varias partículas basado en 4 direcciones(cardinales). </span>
+                    </li>
+                    <ul>
+                        <li><span>El sistema implementado no permite un movimiento fluido y da la sensación de
+                                vibración.</span></li>
+                    </ul>
+                    <li> <span>Movimiento aleatorio de varias partículas basado en vector direccional.
+                            Primera implementación de obstáculos.</span></li>
+                    <ul>
+                        <li><span>Fallos en la acción después del contacto con el obstáculo.
+                                Fluidez en el movimiento no es completa.</span>
+                        </li>
+                    </ul>
+                    <li> <span>Implementación de cronómetro y ciclos de actividad. Exploración durante 8 segundos e
+                            inactividad durante 8 más.</span></li>
+                    <ul>
+                        <li><span>Las partículas terminan la exploración y reaparecen en el punto de origen, falta
+                                implementar el regreso.</span>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="fase_content row">
+                        <div class="avance col-6">
+                                <h3>20-03-19</h3>
+                                <h4>Descripción:</h4>
+                                <p>
+                                    Mejora en el movimiento de la partícula mediante la adición de nuevas direcciones, sin finalizar la fluidez de esta. Modificación de escala del mundo y las partículas, así como de la velocidad de estas. Explicación de idea de implementación de bases
+                                     de datos para el manejo de la información requerida para el funcionamiento óptimo.    
+                                </p>
+                                <h4>Implementación:</h4>
+                                <p>
+                                    El movimiento de la partícula está definido por la aleatoriedad lo que permite que no controlemos la dirección o el sentido de esta, así mismo está implementado que la dirección variará entre cuatro opciones las cuales representaban respectivamente: arriba, derecha, abajo, izquierda. Para la nueva versión se añadieron las diagonales para que el movimiento se apreciara de mejor manera 
+                                    y diera la impresión de fluidez en el ciclo de vida de la partícula.     
+                                </p>
+                                <h4>Observaciones:</h4>
+                                <p>
+                                    Establecer cuando cada particula será una realidad como individuo.
+                                </p>
+                        </div>                        
+                    </div>
+               
+            </article>
+
+            <article>
+                <h2>Fase 3</h2> <h3>Unity</h3>
+                <img src="img/Unity1.jpg" alt="Imagen Unity">
+                
+                <ul class="clearfix">
+                    <li> <span>Segunda implementación de obstáculos, obstáculo que se debe rodear.
+                            Prueba con varios orígenes.
+                        </span>
+                    </li>
+                    <ul>
+                        <li><span>La implementación de la colisión no es perfecta.</span></li>
+                    </ul>
+                    <li> <span>Prueba con varios orígenes y obstáculo de rodear.</span></li>
+                    <li> <span>Implementación de obstáculo tipo 2, disminuir la velocidad de la partícula cuando lo
+                            atraviese.</span></li>
+                    <li> <span>Reconocimiento del camino y distancia recorrida por cada partícula. Visualización
+                            gráfica.</span> </li>
+                    <li><span>Dejar señales de encuentro con obstáculo </span></li>
+                    <ul>
+                        <li><span>Las señales representantes del encuentro se deben conectar a la base de datos.</span>
+                        </li>
+                    </ul>
+                </ul>
+            </article>
         </main> 
 
         <aside class="sidebar">
-            <h2>Antecedentes o sectores y verificar uno por uno adjuntando su posible aplicacion</h2>
+            <h2>El Proyecto</h2>
             <ul>
-                <li><a href="#">Entrada 1</a></li>
-                <li><a href="#">Entrada 2</a></li>
-                <li><a href="#">Entrada 3</a></li>
-                <li><a href="#">Entrada 4</a></li>
-                <li><a href="#">Entrada 5</a></li>
+                <li><a href="#">Lo que se plantea</a></li>
+                <li><a href="#">Lo que se desarrollo</a></li>
+                <li><a href="#">Alcance de la aplicación</a></li>
             </ul>
         </aside>
     </div> <!-- .principal .contenedor -->

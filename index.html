@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emergencia en colombia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="css/estilos-colombia-general.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="contenido-header contenedor">
+    <header class="site-header container">
+        <div class="contenido-header contenedor row d-flex ">
 
-            <div class="logo">
+            <div class="logo col-4">
                 <img src="img/Logo-LUMEN.png" alt="logo">
             </div><!-- .contenido-header -->
-
+            <div class="col-8">
+                <H1> EMERGENCIA </H1>
+            </div>
         </div>
     </header>
 
@@ -26,130 +31,51 @@
             <ul class="clearfix">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Proyecto.html">Proyecto</a></li>
-                <li><a href="Emergencia.html">Emergencia</a>
-                    <ul>
-                        <li><a href="#">¿Que es?</a></li>
-                        <li><a href="#">otro</a></li>
-                        <li><a href="#">otro</a></li>
-                    </ul>
-                </li>
-                <li><a href="colombia-general.html">Colombia</a>
-                    <ul>
-                        <li><a href="colombia-general.html">General</a></li>
-                        <li><a href="#">Estadisticas</a></li>
-                        <li><a href="#">Emergencia</a></li>
-                    </ul>
-                </li>
+                <li><a href="Emergencia.html">Emergencia</a></li>
+                <li><a href="colombia-general.html">Colombia</a></li>
                 <li><a href="#">Aplicaciones</a></li>
             </ul>
         </nav>
     </div> <!-- .navegacion -->
 
-    <div class="clearfix contenedor principal">
-        <main>
+    <div class="clearfix contenedor principalcontainer-fluid">
+        <div class="row">
+            <main class="col-8 row">
 
-            <article>
-                <h2>Introduccion</h2>
-                <p>Los Sistemas Emergentes se caracterizan por resolver problemas sin recurrir a una inteligencia de
-                    tipo centralizada lo cual significa que la inteligencia desarrollada depende del comportamiento de
-                    todos los individuos como sistema macro.
-                    Se pretende analizar cómo los sistemas emergentes se pueden aplicar a la solución a problemas
-                    específicos de las comunidades y a la vez, como un ingeniero multimedia puede modelar la solución
-                    haciendo uso de estos.
-                </p>
-            </article>
-
-            <div class="contenedor-video">
-                <video width="95%" height="auto" controls preload="auto" loop loop="loop" id="video_background"
-                    poster="img/Logo-LUMEN.png">
-                    <source src="video/Video emergencia.mp4" type="video/mp4" />
-                </video />
-            </div><!-- .hero -->
-
-
-
-            <article>
-                <h2>Fase 1</h2>
-                <img src="img/Opengl1.jpg" alt="Imagen OpenGL">
-                <h3>OpenGL</h3>
-                <ul class="clearfix">
-                    <li> <span> Primer acercamiento a movimiento aleatorio de partículas. </span> </li>
-                    <ul>
-                        <li> <span> Interfaz gráfica limitada, movimiento sesgado a un aleatorio parcializado. </span>
-                        </li>
-                    </ul>
+                <article class="col-12">
+                    <h2>¿Que es la emeregencia?</h2>
+                    <p class="info_principal">Los Sistemas Emergentes se caracterizan por resolver problemas sin recurrir a una inteligencia de
+                        tipo centralizada lo cual significa que la inteligencia desarrollada depende del comportamiento de
+                        todos los individuos como sistema macro.
+                        Se pretende analizar cómo los sistemas emergentes se pueden aplicar a la solución a problemas
+                        específicos de las comunidades y a la vez, como un ingeniero multimedia puede modelar la solución
+                        haciendo uso de estos.
+                    </h2>
+                </article>
+    
+                <div class="contenedor-video col-12">
+                    <video width="95%" height="auto" controls preload="auto" loop loop="loop" id="video_background"
+                        poster="img/Logo-LUMEN.png">
+                        <source src="video/Video emergencia.mp4" type="video/mp4" />
+                    </video >
+                </div><!-- .hero -->
+    
+    
+    
+               
+            </main>
+    
+            <aside class="sidebar col-4 d-flex flex-column aling-com align-items-center">
+                <h2>Principios Emergencia</h2>
+                <ul>
+                    <li><a href="#">Mas es diferente</a></li>
+                    <li><a href="#">La ignorancia es util</a></li>
+                    <li><a href="#">Alentar encuentros casuales</a></li>
+                    <li><a href="#">Bucar Patrones en los signos</a></li>
+                    <li><a href="#">Prestar atenciona los vecinos</a></li>
                 </ul>
-
-                <a href="#" class='boton'>Leer mas</a>
-            </article>
-
-            <article>
-                <h2>Fase 2</h2>
-                <img src="img/JavaScript1.jpg" alt="Imagen JavaScript">
-                <h3>JavaScript y paper.js</h3>
-                <ul class="clearfix">
-                    <li> <span> Movimiento aleatorio de varias partículas basado en 4 direcciones(cardinales). </span>
-                    </li>
-                    <ul>
-                        <li><span>El sistema implementado no permite un movimiento fluido y da la sensación de
-                                vibración.</span></li>
-                    </ul>
-                    <li> <span>Movimiento aleatorio de varias partículas basado en vector direccional.
-                            Primera implementación de obstáculos.</span></li>
-                    <ul>
-                        <li><span>Fallos en la acción después del contacto con el obstáculo.
-                                Fluidez en el movimiento no es completa.</span>
-                        </li>
-                    </ul>
-                    <li> <span>Implementación de cronómetro y ciclos de actividad. Exploración durante 8 segundos e
-                            inactividad durante 8 más.</span></li>
-                    <ul>
-                        <li><span>Las partículas terminan la exploración y reaparecen en el punto de origen, falta
-                                implementar el regreso.</span>
-                        </li>
-                    </ul>
-                </ul>
-
-                <a href="#" class='boton'>Leer mas</a>
-            </article>
-
-            <article>
-                <h2>Fase 3</h2>
-                <img src="img/Unity1.jpg" alt="Imagen Unity">
-                <h3>Unity</h3>
-                <ul class="clearfix">
-                    <li> <span>Segunda implementación de obstáculos, obstáculo que se debe rodear.
-                            Prueba con varios orígenes.
-                        </span>
-                    </li>
-                    <ul>
-                        <li><span>La implementación de la colisión no es perfecta.</span></li>
-                    </ul>
-                    <li> <span>Prueba con varios orígenes y obstáculo de rodear.</span></li>
-                    <li> <span>Implementación de obstáculo tipo 2, disminuir la velocidad de la partícula cuando lo
-                            atraviese.</span></li>
-                    <li> <span>Reconocimiento del camino y distancia recorrida por cada partícula. Visualización
-                            gráfica.</span> </li>
-                    <li><span>Dejar señales de encuentro con obstáculo </span></li>
-                    <ul>
-                        <li><span>Las señales representantes del encuentro se deben conectar a la base de datos.</span>
-                        </li>
-                    </ul>
-                </ul>
-                <a href="#" class='boton'>Leer mas</a>
-            </article>
-        </main>
-
-        <aside class="sidebar">
-            <h2>Antecedentes</h2>
-            <ul>
-                <li><a href="#">Entrada 1</a></li>
-                <li><a href="#">Entrada 2</a></li>
-                <li><a href="#">Entrada 3</a></li>
-                <li><a href="#">Entrada 4</a></li>
-                <li><a href="#">Entrada 5</a></li>
-            </ul>
-        </aside>
+            </aside>
+        </div>
     </div> <!-- .contenido contenedor -->
 
     <footer>
