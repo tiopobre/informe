@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Emergencia en colombia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="contenido-header contenedor">
+    <header class="site-header container">
+            <div class="contenido-header row d-flex ">
 
-            <div class="logo">
-                <img src="img/Logo-LUMEN.png" alt="logo">
-            </div> <!-- .logo -->
-        </div><!-- .contenido-header -->
+                    <div class="logo col-4">
+                        <img src="img/Logo-LUMEN.png" alt="logo">
+                    </div><!-- .contenido-header -->
+                    <div class="col-8">
+                        <h1> EMERGENCIA </h1>
+                    </div>
+                </div>
     </header>
 
     <div class="navegacion clearfix">
@@ -27,16 +32,16 @@
                 <li><a href="Proyecto.html">Proyecto</a></li>
                 <li><a href="Emergencia.html">Emergencia</a></li>
                 <li><a href="colombia-general.html">Colombia</a>
-                <li><a href="#">Aplicaciones</a></li>
+                <li><a href="aplicaciones.html">Aplicaciones</a></li>
             </ul>
         </nav>
     </div> <!-- .navegacion -->
 
-    <div class="clearfix contenedor principal">
+    <div class="clearfix contenedor principal container">
         <main>
 
             <article>
-                <h2>¿que es?</h2>
+                <h2>¿Que es?</h2>
                 <p>Sistemas emergentes son sistemas complejos de adaptación que despliegan comportamientos emergentes. Se caracterizan por resolver problemas, al menos en apariencia, espontáneamente; es decir, sin recurrir a una inteligencia de tipo centralizado o jerarquizado (descendente), sino de forma ascendente, desde la base, a partir de masas de elementos relativamente no inteligentes. El comportamiento separado, individual, de cada uno de los agentes, al aumentar la escala comienza a producir un comportamiento colectivo propio de un nivel de organización superior, a pesar de la aparente carencia de organización en forma de leyes o instrucciones provenientes de una autoridad superior.
                 </p>
             </article>
@@ -46,7 +51,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quas veniam quam, consequuntur hic laudantium eos sint. Dolore dolorem facilis, debitis ut laborum nobis voluptate laudantium molestias provident eveniet dolorum.</p>
 
             </article>
-            <article>
+            <article id="mas-es-diferente">
                 <h2> 1. Mas es diferente</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisic                    ing elit. Rerum quas veniam quam, consequun                    ur hic laudantium eos sint. Dolore dolorem facilis, 
@@ -55,7 +60,7 @@
                 </p>
             </article>
 
-            <article>
+            <article id="ignorancia-util">
                     <h2> 2.  La ignorancia es util</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisic                    ing elit. Rerum quas veniam quam, consequun                    ur hic laudantium eos sint. Dolore dolorem facilis, 
@@ -64,7 +69,7 @@
                     </p>
             </article>
 
-            <article>
+            <article id="encuentros">
                     <h2> 3. Alentar encuentros casuales</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisic                    ing elit. Rerum quas veniam quam, consequun                    ur hic laudantium eos sint. Dolore dolorem facilis, 
@@ -73,8 +78,8 @@
                     </p>
             </article>
 
-            <article>
-                    <h2> 4. Alentar encuentros casuales</h2>
+            <article id="buscar-patrones">
+                    <h2> 4. Buscar patrones en los signos</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisic                    ing elit. Rerum quas veniam quam, consequun                    ur hic laudantium eos sint. Dolore dolorem facilis, 
                         debitis ut laborum nobis voluptate laudantium molestias 
@@ -82,8 +87,8 @@
                     </p>
             </article>
 
-            <article>
-                    <h2> 5. Alentar encuentros casuales</h2>
+            <article id="prestar-atencion">
+                    <h2> 5. Prestar atencion a tus vecinos</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisic                    ing elit. Rerum quas veniam quam, consequun                    ur hic laudantium eos sint. Dolore dolorem facilis, 
                         debitis ut laborum nobis voluptate laudantium molestias 
@@ -93,39 +98,38 @@
             
         </main> 
 
-        <aside class="sidebar col-4 d-flex flex-column aling-com align-items-center">
+        <aside class="sidebar col-4 d-flex flex-column aling-com">
             <h2>Principios Emergencia</h2>
             <ul>
-                <li><a href="#">Mas es diferente</a></li>
-                <li><a href="#">La ignorancia es util</a></li>
-                <li><a href="#">Alentar encuentros casuales</a></li>
-                <li><a href="#">Bucar Patrones en los signos</a></li>
-                <li><a href="#">Prestar atenciona los vecinos</a></li>
+                <li><a href="#mas-es-diferente">Mas es diferente</a></li>
+                <li><a href="#ignorancia-util">La ignorancia es util</a></li>
+                <li><a href="#encuentros">Alentar encuentros casuales</a></li>
+                <li><a href="#buscar-patrones">Bucar Patrones en los signos</a></li>
+                <li><a href="#prestar-atencion">Prestar atenciona los vecinos</a></li>
             </ul>
         </aside>
     </div> <!-- .principal .contenedor -->
 
     <footer>
         <div class="contenedor clearfix">
-            <div class="nosotros">
-                <h2>Sobre nosotros</h2>
-                <p>Iure autem odio rerum porro minus ut. Nihil consequatur soluta et illo. Corrupti maxime dolor sunt
-                    non qui eum. Nam
-                    velit perspiciatis dolores quod quam eius. Delectus eius recusandae cum. Laudantium voluptate omnis
-                    maiores omnis
-                    repudiandae.</p>
-            </div> <!-- .nosotros -->
+                <div class="nosotros">
+                        <h2>Presentado por:</h2>
+                        <p>Laura Ballesteros 1201749 <br>
+                            Daniel Serrano 1201736 <br>
+                            Sergio Beltrán 1201704
+                        </p>
+                    </div> <!-- .nosotros -->
+        
             <div class="menu clearfix">
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Emergencia</a></li>
-                        <li><a href="#">Colombia</a></li>
-                        <li><a href="#">Aplicaciones</a></li>
-                        <li><a href="#">Otro</a></li>
-                    </ul>
-                </nav>
-            </div><!-- .menu -->
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="Emergencia.html">Emergencia</a></li>
+                            <li><a href="colombia-general.html">Colombia</a></li>
+                            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- .menu -->
         </div><!-- .contenedor -->
         <p class="copyright">
             Todos los derechos reservados &copy;.

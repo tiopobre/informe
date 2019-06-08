@@ -21,12 +21,16 @@ html {
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #e4e4e4;
 }
 
 header{
     background-color: #e4e4e4;
+}
+
+div.logo{
+    padding: 30px 0;
 }
 
 div.contenedor{
@@ -36,13 +40,30 @@ div.contenedor{
 
 div.contenedor.principal{
     background-color: #f2f2f2;
-    -webkit-box-shadow: 0 0 30px 0 rgba(12,12,12,12);
-    box-shadow: 0 0 30px 0 rgba(12,12,12,12);
+    -webkit-box-shadow: 0 0 10px 0 rgba(1,1,1,0.3);
+    box-shadow: 0 0 10px 0 rgba(1,1,1,0.3);
 }
 
 div.logo img{
     width: 150px;
 }
+
+article section img{
+    width: 70%;
+}
+
+h1{
+    line-height: 4;
+    color: #df5616;
+    font-family: 'PT Sans', sans-serif;
+}
+
+h2, h3, h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
 /*----------------- Fin estilos globales ------------*/
 
 /*----------------- Inicio navegacion ------------*/
@@ -164,6 +185,13 @@ article p{
     cursor: pointer; 
 }
 
+section.agropecuario img{
+    width: 100%;
+}
+
+section.financiero img{
+    width: 100%;
+}
 
 
 div.boton a{
@@ -192,6 +220,7 @@ aside ul li a{
 
 aside ul li:hover a{
     color: white;
+    text-decoration: none;
 }
 /*-------------- Fin sidebar --------------*/
 
@@ -233,5 +262,6 @@ p.copyright{
     padding-bottom: 15px ;
     text-align: center;
     color: #ffffff;
+    margin: 0;
 }
 /*-------------- Fin Footer --------------*/
