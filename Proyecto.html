@@ -394,20 +394,39 @@
 
                     <h4> A futuro</h2>
                         <p>
-                            Cada individuo necesita tener un microcomportamiento para luego llegar al macrocomportamiento, para ello debe tomar desiciones de 
-                            acuerdo a todas las variables a las que tenga acceso por ello seria ideal poder integrar algun otro tipo de inteligencia artificial 
+                            Cada individuo necesita tener un microcomportamiento para luego llegar al
+                            macrocomportamiento, para ello debe tomar desiciones de
+                            acuerdo a todas las variables a las que tenga acceso por ello seria ideal poder integrar
+                            algun otro tipo de inteligencia artificial
                             como redes neuronales para que los individuos tomen estas decisiones.
+                            Esto tambien es importante para que la particula pueda por ejemplo rodear un obstaculo de la
+                            mejor manera.
+                        </p>
+                        <p>
+                            Tambien seria posible si se ve necesario, crear varios tipos base de individuos cambiando
+                            solo un poco las propiedades ya establecidas
+                            e incluso dejar que el sistema en si decida como y cuando variar estas propiedades.
                         </p>
                 </article>
                 <article class="card col-12">
-                    <h3> Terreno</h3>
+                    <h3> El mundo</h3>
                     <p>
                         El tertreno esta dividido en zonas de (20cm x 20cm ) que a su vez estan divdidas en 400
                         celdas(1cm x
                         1cm), las celdas que no han sido visitadas estan oscuras
                         y las visitadas son claras. Cada particula tiene un radio de 0.2cm
-                        <img src="img/grilla.PNG" alt="">
                     </p>
+                    <img src="img/grilla.PNG" alt="">
+                    <h4> A futuro</h2>
+                        <p>
+                            Con mas tiempo de desarrolo se puede hacer que el mundo sea mas grande por ahora solo existe
+                            una zona, pero se podria
+                            implementar un sistema que permita crea zonas que contengan obstaculos aleatorios dentro de
+                            ellas, tambien se pueden pensar en terrenos
+                            especiales que interactuen de otras maneras con cada individuo, la representacion del
+                            "terreno recorrido" es un problema a resolver para almacenar esa
+                            informacion y darsela a las particulas.
+                        </p>
                 </article>
 
 
@@ -415,14 +434,22 @@
                     <h3> Nidos</h3>
                     <p>
                         Las particulas son replicadas a partir de una particula "original" por un objeto denominado como
-                        "nido", este nido puede ser ubicado en cualquier luugar del terreno,
+                        "nido", este nido puede ser ubicado en cualquier luugar del terreno y pueden existir mas de un
+                        nido a la vez.
                         tiene propiedades que eventualmente se pueden ajustar a lo que suceda con el sistema, estas son,
                         el
                         tiempo de espera antes de crear mas particulas , cuantas párticulas son creadas
                         esto deerminaria la frecuencia en que se iran creando nuevos individuos.
-                        <img src="img/nido.PNG" alt="">
-                        <img src="img/nido_pro.PNG" alt="">
                     </p>
+
+                    <img src="img/nido.PNG" alt="">
+                    <img src="img/nido_pro.PNG" alt="">
+                    <h4> A futuro</h2>
+                        <p>
+                            Con tiempo se puede implementar mecanismos mediante los cuales el sistema cree nidos por si
+                            mismo ya es posible crearlo mientras se ejecuta el programa pero no hay un mecanismo que le
+                            permita tomar esa desicion al sistema
+                        </p>
                 </article>
 
                 <article class="card col-12">
@@ -433,6 +460,14 @@
                         señal que otros individuos pueden percibir a cierta distancia.
                     </p>
                     <img src="img/señal.PNG" alt="">
+                    <h4> A futuro</h2>
+                        <p>
+                            Si se sigue el desarrollo es posible definir mas tipos de señales, perto incluso si no se
+                            hace es posible tambien crear mecanismos que para relacionar la informacion que estas
+                            señales proveen a las particulas
+                            creando nueva informacio y variables que eventualmente generen meta información que se pueda
+                            presentar a algun observador en forma de gráficos por ejemplo
+                        </p>
                 </article>
 
 
