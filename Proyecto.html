@@ -42,8 +42,9 @@
     <div class="clearfix contenedor principal container">
         <main>
 
-            <article>
-                <h2>Proyecto</h2>
+            <!-- Que se planteo -->
+            <article id ="planteamiento">
+                <h1 class="titulo_seccion">Proyecto</h1>
                 <p>La visualización individual y conjunta de partículas en un ciclo de tiempo y un área previamente
                     establecida en donde se percibe el comportamiento emergente o las bases para alcanzarlo en futuras
                     versiones.
@@ -88,10 +89,13 @@
                 </p>
             </article>
             <div style="width: 640px; height: 480px; margin: 10px; position: relative;">
-                <iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/56c539da-fa0d-4d30-b2b6-c5fa31d8cd0b" id="eqznWeo4nXOp"></iframe>
+                <iframe allowfullscreen frameborder="0" style="width:640px; height:480px"
+                    src="https://www.lucidchart.com/documents/embeddedchart/56c539da-fa0d-4d30-b2b6-c5fa31d8cd0b"
+                    id="eqznWeo4nXOp"></iframe>
             </div>
-            <article>
-                <h2>¿Que se desarrollo?</h2>
+             <!-- Que se Desarrollo -->
+            <article id ="desarrollo">
+                <h1 class="titulo_seccion">¿Que se desarrollo?</h1>
                 <p>El software desarrollado comple con las pautas establecidas por la empresa cliente y cuenta con las
                     siguientes especificaciones:
                     Aplicación 3D desarrollada mediante Unity 3D que permite visualizar e interactuar con individuos
@@ -103,6 +107,11 @@
                     la constante actualización de datos obteniendo así mejor procesamiento del histórico de la
                     información para posterior análisis de datos e interpretación.
                 </p>
+
+                <video width="95%" height="auto" controls preload="auto" loop loop="loop" id="video_background"
+                        poster="img/Logo-LUMEN.png">
+                        <source src="video/Video emergencia.mp4" type="video/mp4" />
+                    </video >
             </article>
 
             <article class="">
@@ -118,7 +127,7 @@
                     </ul>
                 </ul>
                 <div class="fase_content row">
-                    <div class="card avance col-8">
+                    <div class="card avance col-12">
                         <h3>13-03-19</h3>
                         <h4>Descripción:</h4>
                         <p>
@@ -263,7 +272,7 @@
                 </div>
 
             </article>
-
+            <!-- .Unity -->
             <article>
                 <h2>Fase 3</h2>
                 <h3>Unity</h3>
@@ -290,116 +299,111 @@
                 </ul>
                 <!--  -->
                 <div class="fase_content row">
-                    <div class="avance col-6">
-                        <h3 class="card-header"> 25-04-19 </h3>
+
+                    <div class=" card col-6 ">
+                        <h3 > 25-04-19 </h3>
                         <h4>Implementación:</h4>
                         <p>
                             Segunda implementación de obstáculos, obstáculo que se debe rodear.
                             Prueba con varios orígenes.
                         </p>
-
-                    </div>
-                    <div class="col-6">
-                        <div class="card">
-                                <h3 class="card-header fluid">Quote</h3>
-                                <h4>Implementación:</h4>
-                                <p>
-                                    Prueba con varios orígenes y obstáculo de rodear.
-                                </p>
-                        </div>
-                    </div>
-                    <div class="avance col-6">
-                        <div class="card">
-                                <h3> 01-05-19 </h3>
-                                <h4>Implementación:</h4>
-                                <p>
-                                    Prueba con varios orígenes y obstáculo de rodear.
-                                </p>
-                            </div>
+                        <iframe class="drive-video" src="https://drive.google.com/file/d/1PKT6me-H3flmylwyUckpZQYpEappNvP-/preview" ></iframe>
                     </div>
 
-                    <div class="avance col-6">
-                        <div class="card">
-                                <h3> 8-05-19 </h3>
-                                <h4>Implementación:</h4>
-                                <p>
-                                    Implementación de obstáculo tipo 2, disminuir la velocidad de la partícula cuando lo
-                                    atraviese.
-                                </p>
-                            </div>
+                    <div class="card col-6">
+                        <h3> 01-05-19 </h3>
+                        <h4>Implementación:</h4>
+                        <p>
+                            Prueba con varios orígenes y obstáculo de rodear.
+                        </p>
+                        <iframe class="drive-video" src="https://drive.google.com/file/d/1sNAAVLFNTFj_cxXhcX6VdB9BPmPNjCu5/preview"></iframe>
                     </div>
 
-                    <div class="avance col-6">             
-                        <div class="card">
-                                <h3> 15-05-19 </h3>
-                                <h4>Implementación:</h4>
-                                <p>
-                                    Reconocimiento del camino y distancia recorrida por cada partícula. Visualización gráfica.
-                                </p>
-                            </div>
+                    <div class="card col-6">
+
+                        <h3> 8-05-19 </h3>
+                        <h4>Implementación:</h4>
+                        <p>
+                            Implementación de obstáculo tipo 2, disminuir la velocidad de la partícula cuando lo
+                            atraviese.
+                        </p>
+                        <iframe class="drive-video" src="https://drive.google.com/file/d/1KL6LjCn5VBfB-vmaNmdDdkobGx9ACFyH/preview"></iframe>
                     </div>
 
-                    <div class="avance col-6">                            
-                            <div class="card">
-                                    <h3> 22-05-19 </h3>
-                                    <h4>Implementación:</h4>
-                                    <p>
-                                        Dejar señales de encuentro con obstáculo
-                                    </p>
-                                    <p>
-                                        Movimiento aleatorio de una partícula 
-                                        por el mundo. </p>
-                                </div>
+                    <div class="card col-6">
+
+                        <h3> 15-05-19 </h3>
+                        <h4>Implementación:</h4>
+                        <p>
+                            Reconocimiento del camino y distancia recorrida por cada partícula. Visualización gráfica.
+                        </p>
+                        <iframe class="drive-video" src="https://drive.google.com/file/d/19zHCcjItNNpB117inZEAc5YSHtlDbXc4/preview"></iframe>
                     </div>
 
-                    <div class="avance col-6">
-                        <div class="card">
-                                <h3> 29-05-19 </h3>
-                                <h4>Implementación:</h4>
-                                <p>
-                                    Movimiento aleatorio de varias partículas por el mundo.
-                                    Reconocimiento de partículas alrededor.
-        
-                                </p>
-                        </div>
+                    <div class="card col-6">
+
+                        <h3> 22-05-19 </h3>
+                        <h4>Implementación:</h4>
+                        <p>
+                            Dejar señales de encuentro con obstáculo
+                        </p>
+                        <p>
+                            Movimiento aleatorio de una partícula
+                            por el mundo. </p>
+                            <iframe class="drive-video" src="https://drive.google.com/file/d/1nIt_sWsSKnT4h959buK8lPYnKD5tgn_9/preview"></iframe>
+                    </div>
+
+                    <div class="card col-6">
+
+                        <h3> 29-05-19 </h3>
+                        <h4>Implementación:</h4>
+                        <p>
+                            Movimiento aleatorio de varias partículas por el mundo.
+                            Reconocimiento de partículas alrededor.
+                        </p>
+                        <iframe class="drive-video" src="https://drive.google.com/file/d/1ZASFlTqrvqkoM-FY5uZ8fxP-vkDR_jaK/preview"></iframe>
                     </div>
                 </div>
+            </article>
+            <article id ="alcance">
+                <h1 class="titulo_seccion"> Alcance aplicacion</h1>
+
             </article>
         </main>
         <!--  -->
         <div class="card">
 
-            </div>
+        </div>
         <!--  -->
         <aside class="sidebar">
             <h2>El Proyecto</h2>
             <ul>
-                <li><a href="#">Lo que se plantea</a></li>
-                <li><a href="#">Lo que se desarrollo</a></li>
-                <li><a href="#">Alcance de la aplicación</a></li>
+                <li><a href="#plantemiento">Lo que se plantea</a></li>
+                <li><a href="#desarrollo">Lo que se desarrollo</a></li>
+                <li><a href="#alcance">Alcance de la aplicación</a></li>
             </ul>
         </aside>
     </div> <!-- .principal .contenedor -->
 
     <footer>
         <div class="contenedor clearfix">
-                <div class="nosotros">
-                        <h2>Presentado por:</h2>
-                        <p>Laura Ballesteros 1201749 <br>
-                            Daniel Serrano 1201736 <br>
-                            Sergio Beltrán 1201704
-                        </p>
-                    </div> <!-- .nosotros -->        
+            <div class="nosotros">
+                <h2>Presentado por:</h2>
+                <p>Laura Ballesteros 1201749 <br>
+                    Daniel Serrano 1201736 <br>
+                    Sergio Beltrán 1201704
+                </p>
+            </div> <!-- .nosotros -->
             <div class="menu clearfix">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="Emergencia.html">Emergencia</a></li>
-                            <li><a href="colombia-general.html">Colombia</a></li>
-                            <li><a href="aplicaciones.html">Aplicaciones</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- .menu -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Emergencia.html">Emergencia</a></li>
+                        <li><a href="colombia-general.html">Colombia</a></li>
+                        <li><a href="aplicaciones.html">Aplicaciones</a></li>
+                    </ul>
+                </nav>
+            </div><!-- .menu -->
         </div><!-- .contenedor -->
         <p class="copyright">
             Todos los derechos reservados &copy;.
