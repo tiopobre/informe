@@ -65,8 +65,15 @@ h2, h3, h4{
 .fuentes h3{
 color: #4286f4;
 }
+.mercado h3{
+color: #56a823;
+}
  .images_ img{
      margin: 5px;
+ }
+
+ .title{
+    padding-top: 50px;
  }
 
 
